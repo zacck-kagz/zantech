@@ -330,10 +330,9 @@ nav {
 }
 
 .hero-content .tagline {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     color: var(--text-light);
     margin-bottom: 40px;
-    max-width: 90%;
 }
 
 .hero-image {
