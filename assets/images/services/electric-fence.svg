@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fence-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Fence Posts -->
+  <rect x="20" y="25" width="5" height="60" fill="#64748b" />
+  <rect x="75" y="25" width="5" height="60" fill="#64748b" />
+  
+  <!-- Fence Wires -->
+  <line x1="25" y1="35" x2="75" y2="35" stroke="#94a3b8" stroke-width="2" />
+  <line x1="25" y1="50" x2="75" y2="50" stroke="#94a3b8" stroke-width="2" />
+  <line x1="25" y1="65" x2="75" y2="65" stroke="#94a3b8" stroke-width="2" />
+  
+  <!-- Electrical Symbols -->
+  <path d="M45,35 L55,35 L50,28 Z" fill="#fcd34d" />
+  <path d="M45,50 L55,50 L50,43 Z" fill="#fcd34d" />
+  <path d="M45,65 L55,65 L50,58 Z" fill="#fcd34d" />
+  
+  <!-- Control Box -->
+  <rect x="38" y="75" width="24" height="15" rx="2" fill="url(#fence-gradient)" />
+  <circle cx="50" cy="80" r="2" fill="#ef4444">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Electric Symbol -->
+  <path d="M50,15 L45,25 L55,25 Z" fill="#fcd34d" stroke="#fcd34d" stroke-width="1" />
+  <line x1="50" y1="10" x2="50" y2="15" stroke="#fcd34d" stroke-width="2" />
+</svg>

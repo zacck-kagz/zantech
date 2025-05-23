@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="repair-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Toolbox -->
+  <rect x="20" y="55" width="60" height="35" rx="5" fill="#475569" />
+  <rect x="20" y="45" width="60" height="10" rx="2" fill="#64748b" />
+  <rect x="45" y="40" width="10" height="5" fill="#64748b" />
+  
+  <!-- Tools -->
+  <!-- Screwdriver -->
+  <rect x="30" y="50" width="2" height="15" fill="#94a3b8" transform="rotate(-30 30 50)" />
+  <rect x="28" y="47" width="6" height="3" fill="#e2e8f0" transform="rotate(-30 28 47)" />
+  
+  <!-- Wrench -->
+  <path d="M70,60 C65,60 65,65 70,65 L75,70 C77,72 80,72 82,70 C84,68 84,65 82,63 L77,58 C75,60 75,60 70,60 Z" fill="#94a3b8" />
+  
+  <!-- Circuit Board being repaired -->
+  <rect x="35" y="15" width="30" height="20" rx="2" fill="url(#repair-gradient)" />
+  <line x1="40" y1="20" x2="60" y2="20" stroke="#10b981" stroke-width="1" />
+  <line x1="40" y1="25" x2="50" y2="25" stroke="#10b981" stroke-width="1" />
+  <line x1="40" y1="30" x2="55" y2="30" stroke="#10b981" stroke-width="1" />
+  <circle cx="45" cy="20" r="1.5" fill="#f8fafc" />
+  <circle cx="55" cy="20" r="1.5" fill="#f8fafc" />
+  <circle cx="45" cy="25" r="1.5" fill="#f8fafc" />
+  <circle cx="45" cy="30" r="1.5" fill="#f8fafc" />
+  <circle cx="50" cy="30" r="1.5" fill="#f8fafc" />
+  
+  <!-- Gear Icons -->
+  <path d="M25,25 C22,25 20,27 20,30 C20,33 22,35 25,35 C28,35 30,33 30,30 C30,27 28,25 25,25 Z M25,28 C26.5,28 27,28.5 27,30 C27,31.5 26.5,32 25,32 C23.5,32 23,31.5 23,30 C23,28.5 23.5,28 25,28 Z" fill="#94a3b8">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 25 30" to="360 25 30" dur="10s" repeatCount="indefinite" />
+  </path>
+  
+  <path d="M75,25 C72,25 70,27 70,30 C70,33 72,35 75,35 C78,35 80,33 80,30 C80,27 78,25 75,25 Z M75,28 C76.5,28 77,28.5 77,30 C77,31.5 76.5,32 75,32 C73.5,32 73,31.5 73,30 C73,28.5 73.5,28 75,28 Z" fill="#94a3b8">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 75 30" to="-360 75 30" dur="10s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Lightning Bolt for Electric Repair -->
+  <path d="M50,70 L45,80 L55,75 L45,90 L50,80 L40,85 Z" fill="#fcd34d" />
+</svg>

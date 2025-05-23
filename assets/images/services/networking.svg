@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="network-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Router/Central Hub -->
+  <rect x="40" y="40" width="20" height="20" rx="2" fill="url(#network-gradient)" />
+  
+  <!-- LED Indicators -->
+  <circle cx="45" cy="45" r="1.5" fill="#10b981">
+    <animate attributeName="opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="50" cy="45" r="1.5" fill="#fcd34d">
+    <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="55" cy="45" r="1.5" fill="#ef4444">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Network Devices -->
+  <rect x="20" y="15" width="15" height="10" rx="1" fill="#64748b" /> <!-- CCTV -->
+  <rect x="65" y="15" width="15" height="10" rx="1" fill="#64748b" /> <!-- Alarm -->
+  <rect x="20" y="75" width="15" height="10" rx="1" fill="#64748b" /> <!-- Gate -->
+  <rect x="65" y="75" width="15" height="10" rx="1" fill="#64748b" /> <!-- Door -->
+  
+  <!-- Icons for Devices -->
+  <circle cx="27.5" cy="20" r="3" fill="#94a3b8" /> <!-- CCTV Camera -->
+  <rect x="69" y="17" width="7" height="6" rx="1" fill="#94a3b8" /> <!-- Alarm Box -->
+  <path d="M25,80 L30,80 L30,75 L25,75 Z" fill="#94a3b8" /> <!-- Gate -->
+  <rect x="70" y="78" width="5" height="7" rx="1" fill="#94a3b8" /> <!-- Door -->
+  
+  <!-- Connection Lines -->
+  <line x1="27.5" y1="25" x2="40" y2="40" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2">
+    <animate attributeName="stroke-dashoffset" values="4;0;4" dur="5s" repeatCount="indefinite" />
+  </line>
+  <line x1="72.5" y1="25" x2="60" y2="40" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2">
+    <animate attributeName="stroke-dashoffset" values="4;0;4" dur="5s" repeatCount="indefinite" />
+  </line>
+  <line x1="27.5" y1="75" x2="40" y2="60" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2">
+    <animate attributeName="stroke-dashoffset" values="4;0;4" dur="5s" repeatCount="indefinite" />
+  </line>
+  <line x1="72.5" y1="75" x2="60" y2="60" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2">
+    <animate attributeName="stroke-dashoffset" values="4;0;4" dur="5s" repeatCount="indefinite" />
+  </line>
+  
+  <!-- Wireless Signals -->
+  <path d="M50,35 C40,25 60,25 50,35" fill="none" stroke="#10b981" stroke-width="1" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2s" repeatCount="indefinite" />
+  </path>
+  <path d="M50,30 C35,15 65,15 50,30" fill="none" stroke="#10b981" stroke-width="1" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="2s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Cloud Storage -->
+  <path d="M80,30 C85,25 90,25 95,30 C100,35 100,40 95,45 C90,50 85,50 80,45 C75,50 70,50 65,45 C60,40 60,35 65,30 C70,25 75,25 80,30 Z" fill="#e2e8f0" />
+  <path d="M80,35 L80,45 M75,40 L85,40" stroke="#94a3b8" stroke-width="1" />
+</svg>

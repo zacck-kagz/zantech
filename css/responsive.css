@@ -1,0 +1,218 @@
+/* Responsive styles for Zantech landing page */
+
+/* Large Screens (Desktops) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-content h1 {
+        font-size: 40px;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero-content,
+    .hero-image {
+        max-width: 100%;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+    
+    .footer-content {
+        gap: 20px;
+    }
+}
+
+/* Small Screens (Mobile Landscape) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    header .container {
+        padding: 0 15px;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background-color: var(--card-bg);
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: var(--shadow-md);
+        transition: var(--transition);
+        z-index: 999;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 15px;
+    }
+    
+    .hero-content {
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .stats-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .stat-item {
+        margin: 0;
+    }
+    
+    .section-header h2 {
+        font-size: 30px;
+    }
+    
+    .section-subtitle {
+        font-size: 16px;
+    }
+    
+    .footer-column {
+        min-width: 100%;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .footer-links a {
+        margin: 0 10px;
+    }
+}
+
+/* Extra Small Screens (Mobile Portrait) */
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    
+    .hero-content .tagline {
+        font-size: 16px;
+    }
+    
+    .section-header h2 {
+        font-size: 26px;
+    }
+    
+    .section-subtitle {
+        font-size: 14px;
+    }
+    
+    .service-card {
+        padding: 15px;
+    }
+    
+    .testimonial-author {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .info-item i {
+        margin: 0 0 15px 0;
+    }
+    
+    .footer-column h4 {
+        text-align: center;
+    }
+    
+    .footer-column h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-column ul {
+        text-align: center;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 0.8s ease-in-out;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.8s ease-in-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.8s ease-in-out;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}

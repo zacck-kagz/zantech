@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="door-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Door Frame -->
+  <rect x="25" y="15" width="50" height="75" rx="2" fill="#475569" />
+  
+  <!-- Door -->
+  <rect x="30" y="20" width="40" height="65" rx="1" fill="#f8fafc" />
+  
+  <!-- Digital Lock -->
+  <rect x="40" y="45" width="20" height="25" rx="2" fill="url(#door-gradient)" />
+  
+  <!-- Keypad -->
+  <rect x="42" y="48" width="16" height="8" rx="1" fill="#0f172a" />
+  <circle cx="45" cy="58" r="1.5" fill="#ffffff" />
+  <circle cx="50" cy="58" r="1.5" fill="#ffffff" />
+  <circle cx="55" cy="58" r="1.5" fill="#ffffff" />
+  <circle cx="45" cy="62" r="1.5" fill="#ffffff" />
+  <circle cx="50" cy="62" r="1.5" fill="#ffffff" />
+  <circle cx="55" cy="62" r="1.5" fill="#ffffff" />
+  <circle cx="45" cy="66" r="1.5" fill="#ffffff" />
+  <circle cx="50" cy="66" r="1.5" fill="#ffffff" />
+  <circle cx="55" cy="66" r="1.5" fill="#ffffff" />
+  
+  <!-- Digital Display -->
+  <rect x="44" y="50" width="12" height="4" rx="1" fill="#0f0" />
+  
+  <!-- Fingerprint Scanner -->
+  <circle cx="50" cy="40" r="5" fill="#94a3b8" />
+  <path d="M47,40 C47,38.5 48.5,37 50,37 C51.5,37 53,38.5 53,40 C53,41.5 51.5,43 50,43 C48.5,43 47,41.5 47,40 Z" fill="none" stroke="#10b981" stroke-width="0.5" />
+  <path d="M48,40 C48,39 49,38 50,38 C51,38 52,39 52,40 C52,41 51,42 50,42 C49,42 48,41 48,40 Z" fill="none" stroke="#10b981" stroke-width="0.5" />
+  <path d="M49,40 C49,39.5 49.5,39 50,39 C50.5,39 51,39.5 51,40 C51,40.5 50.5,41 50,41 C49.5,41 49,40.5 49,40 Z" fill="none" stroke="#10b981" stroke-width="0.5" />
+  
+  <!-- Handle -->
+  <rect x="65" y="45" width="3" height="10" rx="1" fill="#94a3b8" />
+  
+  <!-- Wireless Signal -->
+  <path d="M70,35 C75,30 80,30 85,35" fill="none" stroke="#10b981" stroke-width="1.5" />
+  <path d="M70,30 C77,23 83,23 90,30" fill="none" stroke="#10b981" stroke-width="1.5" />
+</svg>

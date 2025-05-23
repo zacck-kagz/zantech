@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hero-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="secondary-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- House Outline -->
+  <path d="M50,150 L200,50 L350,150 L350,250 L50,250 Z" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" />
+  <rect x="160" y="200" width="80" height="50" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" />
+  
+  <!-- Windows -->
+  <rect x="80" y="170" width="40" height="40" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1" />
+  <rect x="280" y="170" width="40" height="40" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1" />
+  
+  <!-- Door -->
+  <rect x="185" y="200" width="30" height="50" fill="#64748b" stroke="#475569" stroke-width="1" />
+  <circle cx="195" cy="225" r="3" fill="#f8fafc" />
+  
+  <!-- Security Shield -->
+  <path d="M200,100 L230,110 L230,150 C230,175 210,200 200,200 C190,200 170,175 170,150 L170,110 Z" fill="url(#hero-gradient)" />
+  
+  <!-- Security Camera -->
+  <rect x="300" y="150" width="20" height="15" rx="2" fill="url(#hero-gradient)" />
+  <circle cx="310" cy="158" r="5" fill="#0f172a" />
+  <circle cx="310" cy="158" r="3" fill="#1e40af" />
+  
+  <!-- Electric Fence -->
+  <line x1="50" y1="150" x2="350" y2="150" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5,5" />
+  <path d="M80,145 L90,145 L85,140 Z" fill="#fcd34d" />
+  <path d="M160,145 L170,145 L165,140 Z" fill="#fcd34d" />
+  <path d="M240,145 L250,145 L245,140 Z" fill="#fcd34d" />
+  <path d="M320,145 L330,145 L325,140 Z" fill="#fcd34d" />
+  
+  <!-- Alarm System -->
+  <rect x="80" y="130" width="15" height="10" rx="2" fill="url(#secondary-gradient)" />
+  <circle cx="87.5" cy="135" r="3" fill="#ef4444">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Gate -->
+  <rect x="50" y="200" width="50" height="50" fill="none" stroke="#94a3b8" stroke-width="2" />
+  <line x1="50" y1="225" x2="100" y2="225" stroke="#94a3b8" stroke-width="2" />
+  <line x1="75" y1="200" x2="75" y2="250" stroke="#94a3b8" stroke-width="2" />
+  
+  <!-- Smart Lock -->
+  <rect x="190" y="225" width="20" height="15" rx="2" fill="url(#secondary-gradient)" />
+  <circle cx="195" cy="230" r="2" fill="#f8fafc" />
+  <circle cx="195" cy="235" r="2" fill="#f8fafc" />
+  <circle cx="205" cy="230" r="2" fill="#f8fafc" />
+  <circle cx="205" cy="235" r="2" fill="#f8fafc" />
+  
+  <!-- Wireless Network -->
+  <path d="M200,80 C170,60 230,60 200,80" fill="none" stroke="#10b981" stroke-width="2" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3s" repeatCount="indefinite" />
+  </path>
+  <path d="M200,70 C160,40 240,40 200,70" fill="none" stroke="#10b981" stroke-width="2" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite" />
+  </path>
+  <path d="M200,60 C150,20 250,20 200,60" fill="none" stroke="#10b981" stroke-width="2" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.05;0.3" dur="3s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Mobile Device -->
+  <rect x="300" y="200" width="20" height="35" rx="2" fill="#475569" />
+  <rect x="302" y="205" width="16" height="25" rx="1" fill="#0f172a" />
+  <circle cx="310" cy="235" r="2" fill="#e2e8f0" />
+  
+  <!-- Connection Lines (Dashed) -->
+  <line x1="310" y1="205" x2="230" y2="150" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3" />
+  <line x1="310" y1="205" x2="87.5" y2="135" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3" />
+  <line x1="310" y1="205" x2="195" y2="230" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3" />
+</svg>
